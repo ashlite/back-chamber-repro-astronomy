@@ -1,7 +1,7 @@
 # back-chamber-repro-astronomy
 
 Need meteor to be installed in your system.
-Then run the program
+Then run the program. This is only a reproduction for the error.
 
 ![image](https://user-images.githubusercontent.com/78148802/115378631-f2109100-a1fa-11eb-8040-94a622385697.png)
 Basicly, when you click the "Publish Game" button, it will run a method to change isPublished field value. But it check the paramCounters validation fields instead.
