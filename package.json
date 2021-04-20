@@ -1,0 +1,35 @@
+{
+  "name": "back-chamber",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "@chakra-ui/react": "^1.3.3",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "@inlet/react-pixi": "^6.5.0",
+    "bcrypt": "^5.0.1",
+    "framer-motion": "^3.7.0",
+    "imagekit": "^3.1.2",
+    "imagekit-javascript": "^1.3.6",
+    "imagekitio-react": "^1.0.9",
+    "meteor-node-stubs": "^1.0.1",
+    "pixi.js": "^6.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^16.13.1",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
