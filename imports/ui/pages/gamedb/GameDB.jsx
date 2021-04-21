@@ -1,8 +1,7 @@
 //component & Method
 import React from 'react'
 import { Meteor } from 'meteor/meteor'
-import { Hello } from '../../component/GlobalComponent'
-import { ListGameItem, NewGameList } from './GDBComp'
+import { ListGameItem } from './GDBComp'
 import { useTracker } from 'meteor/react-meteor-data'
 import { Games } from '../../../db/game'
 
@@ -27,7 +26,6 @@ export default function GameDb(){
   return(
     <>
     <VStack w='80%' mx='auto'>
-      <NewGameList />
       {listLoading && 
         <Box>
           <Spinner size='xl'/>
